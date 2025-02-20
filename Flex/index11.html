@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .item {
+            background: #ddd;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .sub-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .sub-item {
+            background: #bbb;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9em;
+        }
+        .item1 { flex: 1 1 calc(25% - 10px); }
+        .item2 { flex: 2 1 calc(50% - 10px); display: flex; flex-direction: column; }
+        .item3 { flex: 2 1 calc(50% - 10px); display: flex; flex-direction: column; }
+        .item4 { flex: 1 1 calc(25% - 10px); }
+        .item5 { flex: 1 1 calc(25% - 10px); }
+        .item6 { flex: 2 1 calc(50% - 10px); display: flex; flex-direction: column; }
+        .item7 { flex: 2 1 calc(50% - 10px); display: flex; flex-direction: row; }
+        .item8 { flex: 1 1 calc(25% - 10px); }
+        .item9 { flex: 2 1 calc(50% - 10px); display: flex; flex-direction: column; }
+        .item10 { flex: 1 1 calc(25% - 10px); }
+        .item11 { flex: 1 1 calc(25% - 10px); }
+
+       
+        .item2 .sub-container, 
+        .item3 .sub-container, 
+        .item6 .sub-container, 
+        .item9 .sub-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item2 .sub-item, 
+        .item3 .sub-item, 
+        .item6 .sub-item, 
+        .item9 .sub-item {
+            flex: 1 1 calc(50% - 5px);
+        }
+
+        .item7 .sub-container {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+
+        .item7 .sub-item {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">
+            <div class="sub-container">
+                <div class="sub-item">Sub 1</div>
+                <div class="sub-item">Sub 2</div>
+                <div class="sub-item">Sub 3</div>
+                <div class="sub-item">Sub 4</div>
+            </div>
+        </div>
+        <div class="item item3">
+            <div class="sub-container">
+                <div class="sub-item">Sub 1</div>
+                <div class="sub-item">Sub 2</div>
+                <div class="sub-item">Sub 3</div>
+                <div class="sub-item">Sub 4</div>
+            </div>
+        </div>
+        <div class="item item4">Item 4</div>
+        <div class="item item5">Item 5</div>
+        <div class="item item6">
+            <div class="sub-container">
+                <div class="sub-item">Sub 1</div>
+                <div class="sub-item">Sub 2</div>
+            </div>
+        </div>
+        <div class="item item7">
+            <div class="sub-container">
+                <div class="sub-item">Sub 1</div>
+                <div class="sub-item">Sub 2</div>
+            </div>
+        </div>
+        <div class="item item8">Item 8</div>
+        <div class="item item9">
+            <div class="sub-container">
+                <div class="sub-item">Sub 1</div>
+                <div class="sub-item">Sub 2</div>
+                <div class="sub-item">Sub 3</div>
+                <div class="sub-item">Sub 4</div>
+            </div>
+        </div>
+        <div class="item item10">Item 10</div>
+        <div class="item item11">Item 11</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navbar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 2px solid lightgray;
+            border-bottom: 2px solid lightgray;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Navbars</h2>
+    <div class="navbar">
+        <div class="logo"></div>
+        <div class="nav-links">
+            <a href="#">Contact</a>
+            <a href="#">Work</a>
+            <a href="#">Portfolio</a>
+        </div>
+    </div>
+</body>
+</html>

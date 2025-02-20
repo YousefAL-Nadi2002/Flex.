@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        header, footer {
+            width: 100%;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ddd;
+        }
+        footer {
+            border-top: 2px solid #ddd;
+            border-bottom: none;
+        }
+        .logo {
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .buttons {
+            margin-top: 15px;
+        }
+        .btn {
+            padding: 8px 15px;
+            margin: 5px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn.secondary {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ABIR</div>
+        <div class="nav-links">
+            <span>HOME</span>
+            <span>SETTING</span>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="icon">⚙</div>
+        <h3>WEB APPLICATION</h3>
+        <div class="buttons">
+            <button class="btn">To the shop</button>
+            <button class="btn secondary">Check the blog</button>
+        </div>
+    </div>
+
+    <footer>
+        <div>Scanning Rate view</div>
+        <div>Privacy | Terms</div>
+    </footer>
+
+</body>
+</html>

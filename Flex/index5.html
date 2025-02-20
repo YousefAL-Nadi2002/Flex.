@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 700px;
+        }
+
+        .item {
+            background-color: #4a7da0;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-align: center;
+            min-width: 120px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">Turnip</div>
+        <div class="item">greens</div>
+        <div class="item">yarrow</div>
+        <div class="item">ricebean</div>
+        <div class="item">rutabaga</div>
+        <div class="item">endive</div>
+        <div class="item">cauliflower</div>
+        <div class="item">sea lettuce</div>
+        <div class="item">kohlrabi</div>
+        <div class="item">amaranth</div>
+    </div>
+
+</body>
+</html>
